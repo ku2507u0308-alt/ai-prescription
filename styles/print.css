@@ -1,0 +1,36 @@
+@media print {
+  /* Hide navigation and non-essential elements */
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Optimize layout for printing */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ensure prescription takes full page */
+  .prescription-container {
+    page-break-after: always;
+  }
+
+  /* Force QR code to be visible */
+  svg {
+    display: block !important;
+  }
+
+  /* Adjust colors for print */
+  .bg-gradient-to-br,
+  .bg-gradient-to-r {
+    background: white !important;
+  }
+
+  /* Keep borders visible */
+  .border,
+  .border-2,
+  .border-4 {
+    border-color: #000 !important;
+  }
+}
